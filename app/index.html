@@ -12,6 +12,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/google-code-prettify/styles/sunburst.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -27,8 +28,33 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <h3>Grid</h3>
+
+        <pre>
+            This is my code here
+            .selector {
+                background: white;
+            }
+
+            &lt;div class=&quot;some&quot;&gt;
+            Simething
+            &lt;/div&gt;
+        </pre>
 
         <div class="container">
+
+            <div class="row">
+                <div class="col-2">
+                    <div>
+                        Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.
+                    </div>
+                    <div>
+                        Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.
+                    </div>
+                </div>
+            </div>
+
+
             <div class="header">
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="#">Home</a></li>
@@ -41,7 +67,7 @@
             <div class="jumbotron">
                 <h1>'Allo, 'Allo!</h1>
                 <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+                <p><a class="" role="button" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
             </div>
 
             <div class="row marketing">
@@ -73,6 +99,11 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+        <script src="bower_components/platform/platform.js"></script>
+        <script src="bower_components/polymer/polymer.js"></script>
+        <script src="bower_components/prismjs/prism.js"></script>
+        <script src="bower_components/he/he.js"></script>
+        <script src="bower_components/google-code-prettify/src/prettify.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -84,6 +115,13 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+            (function(){
+                $('pre').addClass('prettyprint');
+                prettyPrint();
+            })();
         </script>
 
         <!-- build:js scripts/plugins.js -->

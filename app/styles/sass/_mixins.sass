@@ -1,0 +1,14 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//  M I X I N S
+//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@mixin clearfix
+  &:before,
+  &:after 
+    content: " "
+    display: table
+  &:after 
+    clear: both
+  

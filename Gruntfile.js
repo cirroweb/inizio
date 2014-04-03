@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             compass: {
-                files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+                files: ['<%= config.app %>/styles/sass/{,*/}*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
             },
             styles: {
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
         // Compiles Sass to CSS and generates necessary files if requested
         compass: {
             options: {
-                sassDir: '<%= config.app %>/styles',
+                sassDir: '<%= config.app %>/styles/sass',
                 cssDir: '.tmp/styles',
                 generatedImagesDir: '.tmp/images/generated',
                 imagesDir: '<%= config.app %>/images',
