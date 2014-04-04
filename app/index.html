@@ -9,100 +9,271 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/google-code-prettify/styles/sunburst.css" />
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 8]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+
+        <link rel="stylesheet" href="bower_components/google-code-prettify/styles/desert.css" />
         <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
 
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <h3>Grid</h3>
-
-        <pre>
-            This is my code here
-            .selector {
-                background: white;
-            }
-
-            &lt;div class=&quot;some&quot;&gt;
-            Simething
-            &lt;/div&gt;
-        </pre>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-2">
-                    <div>
-                        Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.
-                    </div>
-                    <div>
-                        Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">inizio</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="" role="button" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass with Compass</h4>
-                    <p>Compass is an open-source CSS Authoring Framework that uses Sass.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-                </div>
-            </div>
-
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-            </div>
-
+        <div id="navicon-button">
+          <div class="navicon"></div>
         </div>
+
+        <div class="nav-wrap">
+          <nav>
+            <a href="#">Login</a>
+          </nav>
+        </div>
+
+        <div class="main-wrap">
+            <div class="cover text-center">
+              <h1>INIZIO</h1>
+            </div>
+
+            <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-2">
+                    </span> 
+                      <h2>Grid</h2>
+                    <span> 
+                    <span>
+                      <p class="lead">The grid system is designed to provide a fluid grid that is very simple and highly semantic.</p>
+                      <p>
+                        Wrap rows with a row div then simply use the column wrapper to specify the number of columns you want <code>col-2</code>. Every direct child within the column wrapper will be given a float, made a block, and given the appropiate percentage width.
+                      </p>
+
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-3&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    
+              <div class="row">
+                <div class="col-2">
+                  <div class="bordered space-half text-center">
+                    2
+                  </div>
+                  <div class="bordered space-half text-center">
+                    2
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-3">
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-4">
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-5">
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-6">
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-8">
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-12">
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                </div>
+              </div>
+
+            </span>
+          </div>
+        </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span>
+                    <h2>Type</h2>
+                  </span>
+                  <span>
+                    <h1>Heading H1 <small>Secondary Text</small></h1>
+                    <h2>Heading H2 <small>Secondary Text</small></h2>
+                    <h3>Heading H3 <small>Secondary Text</small></h3>
+                    <h4>Heading H4 <small>Secondary Text</small></h4>
+                    <h5>Heading H5 <small>Secondary Text</small></h5>
+                    <h6>Heading H6 <small>Secondary Text</small></h6>
+
+                    <p class="space-half-top">Create smaller secondary text by adding a <code>&lt;small&gt;</code> within the heading tag.</p>
+
+<pre>
+&lt;h1&gt;Heading H1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading H2 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;Heading H3 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;Heading H4 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;Heading H5 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;Heading H6 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h6&gt;
+</pre>
+
+                    <p class="lead">This is a lead into the paragraph.</p>
+                    <p>Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.</p>
+<pre>
+&lt;p class=&quot;lead&quot;&gt;This is a lead into the paragraph.&lt;/p&gt;
+&lt;p&gt;Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.&lt;/p&gt;
+</pre>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div> <!-- /.main-wrap -->
+
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
-        <script src="bower_components/platform/platform.js"></script>
-        <script src="bower_components/polymer/polymer.js"></script>
-        <script src="bower_components/prismjs/prism.js"></script>
-        <script src="bower_components/he/he.js"></script>
         <script src="bower_components/google-code-prettify/src/prettify.js"></script>
         <!-- endbower -->
         <!-- endbuild -->

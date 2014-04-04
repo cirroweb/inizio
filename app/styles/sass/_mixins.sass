@@ -12,3 +12,10 @@
   &:after 
     clear: both
   
+@mixin column($count)
+  -moz-column-count: $count
+  -moz-column-gap: 30px
+  -webkit-column-count: $count
+  -webkit-column-gap: 30px
+  column-count: $count
+  column-gap: 30px
