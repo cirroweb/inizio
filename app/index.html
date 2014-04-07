@@ -26,7 +26,7 @@
 
         <div class="nav-wrap">
           <nav>
-            <a href="#">Login</a>
+            <a href="/login.html">Login</a>
           </nav>
         </div>
 
@@ -236,6 +236,7 @@
                     <h2>Type</h2>
                   </span>
                   <span>
+                    <article>
                     <h1>Heading H1 <small>Secondary Text</small></h1>
                     <h2>Heading H2 <small>Secondary Text</small></h2>
                     <h3>Heading H3 <small>Secondary Text</small></h3>
@@ -243,7 +244,7 @@
                     <h5>Heading H5 <small>Secondary Text</small></h5>
                     <h6>Heading H6 <small>Secondary Text</small></h6>
 
-                    <p class="space-half-top">Create smaller secondary text by adding a <code>&lt;small&gt;</code> within the heading tag.</p>
+                    <p class="space-half-top">Heading font and weight can be changed in the <code>_variables.sass</code> under <code>$headingsFontFamily</code> & <code>$headingsFontWeight</code>. You can add smaller secondary text by wrapping a <code>&lt;small&gt;</code> around text within the heading tag.</p>
 
 <pre>
 &lt;h1&gt;Heading H1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
@@ -253,19 +254,439 @@
 &lt;h5&gt;Heading H5 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h5&gt;
 &lt;h6&gt;Heading H6 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h6&gt;
 </pre>
+                  </article>
+                  <article>
+                    <h3>Lead Text</h3>
 
-                    <p class="lead">This is a lead into the paragraph.</p>
+                    <p class="lead">Nicholas Cage is a lengend and this is why.</p>
                     <p>Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.</p>
 <pre>
 &lt;p class=&quot;lead&quot;&gt;This is a lead into the paragraph.&lt;/p&gt;
 &lt;p&gt;Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.&lt;/p&gt;
 </pre>
+                </article>
+                <article>
+                  <h3>Bold, Italics, & Small Text</h3>
+
+                  <p>The bold font weight can be changed in the <code>_variables.sass</code> with <code>$boldFontWeight</code></p>
+
+                  <p>
+                    Nicolas Kim Coppola, born January 7, 1964, known professionally as <strong>Nicolas Cage</strong>, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from <em>romantic comedies and dramas to science fiction and action films</em>. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.<br>
+
+                    <small>Source: Wikipedia.com</small>
+                  </p>
+<pre>
+&lt;p&gt;
+Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt;Nicolas Cage&lt;/strong&gt;, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from &lt;em&gt;romantic comedies and dramas to science fiction and action films&lt;/em&gt;. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.&lt;br&gt;
+
+&lt;small&gt;Source: Wikipedia.com&lt;/small&gt;
+&lt;/p&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h3>Text Alignment</h3>
+                    <div class="space-half-bottom">
+                      <div class="text-left">Nicholas Cage Left</div>
+                      <div class="text-center">Nicholas Cage Center</div>
+                      <div class="text-right">Nicholas Cage Right</div>
+                    </div>
+<pre>
+&lt;div class=&quot;text-left&quot;&gt;Nicholas Cage Left&lt;/div&gt;
+&lt;div class=&quot;text-center&quot;&gt;Nicholas Cage Center&lt;/div&gt;
+&lt;div class=&quot;text-right&quot;&gt;Nicholas Cage Right&lt;/div&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h3>Blockquotes</h3>
+                    <blockquote>
+                      <p>In February 2011, Cage said that, at a certain point in his career, he realized that he had developed his own method of acting, which he described as "Nouveau Shamanic." He noted, "at some point I'll have to write a book" about it.</p>
+                      <cite title="Sir Nicholas Cage">Sir Nicholas Cage</cite>
+                    </blockquote>
+<pre>
+&lt;blockquote&gt;
+  &lt;p&gt;In February 2011, Cage said that, at a certain point in his career, he realized that he had developed his own method of acting, which he described as &quot;Nouveau Shamanic.&quot; He noted, &quot;at some point I&#039;ll have to write a book&quot; about it.&lt;/p&gt;
+  &lt;cite title="Sir Nicholas Cage"&gt;Sir Nicholas Cage&lt;/cite&gt;
+&lt;/blockquote&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h3>Lists</h3>
+                    <h5>Unordered</h5>
+                    <ul>
+                      <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                        <ul>
+                          <li>National Treasure 1</li>
+                          <li>National Treasure 2</li>
+                          <li>National Treasure 3</li>
+                        </ul>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                    </ul>
+
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Ordered</h5>
+                  <ol>
+                    <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                  </ol>
+<pre>
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+                  <h5>Unstyled</h5>
+                  <ul class="unstyled">
+                    <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                  </ul>
+<pre>
+&lt;ul class="unstyled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Inline</h5>
+                  <ul class="inline">
+                    <li>Gone in Sixty Seconds</li>
+                    <li>Adaptation</li>
+                    <li>National Treasure</li>
+                    <li>The Wicker Man</li>
+                    <li>Con Air</li>
+                  </ul>
+<pre>
+&lt;ul class="inline"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Description</h5>
+                  <dl>
+                    <dt>Gone in Sixty Seconds</dt>
+                    <dd>Best movie in history</dd>
+                    <dt>Adaptation</dt>
+                    <dd>Second best movie in history</dd>
+                    <dt>National Treasure</dt>
+                    <dd>National box office hit</dd>
+                  </dl>
+<pre>
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+                  </article>
+
                   </span>
                 </div>
               </div>
             </div>
           </section>
 
+          <hr>
+
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span>
+                    <h2>Tables</h2>
+                  </span>
+                  <span>
+                    <article>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Bordered</h5>
+                    <table class="bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="bordered"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Table Hover</h5>
+                    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Striped</h5>
+                    <table class="striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="striped"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Table Hover</h5>
+                    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Condensed</h5>
+                    <table class="condensed">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="condensed"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Responsive</h5>
+                    <p>Adding a wrapper div with the class <code>.table-responsive</code> enables the wrapper div to overflow-x to allow scrolling of large tables on smaller screens. This will only work on screens below 768px.</p>
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+<pre>
+&lt;div class="table-responsive"&gt;
+  &lt;table&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                  </article>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span><h2>Forms</h2></span>
+                  <span>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Check me out
+                        </label>
+                      </div>
+                      <button type="submit">Submit</button>
+                    </form>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>  
+
+
+        
         </div> <!-- /.main-wrap -->
 
 

@@ -19,3 +19,21 @@
   -webkit-column-gap: 30px
   column-count: $count
   column-gap: 30px
+
+// Transition
+@mixin transition() 
+  -webkit-transition-property: all
+  -webkit-transition-duration: 0.1s
+  -webkit-transition-timing-function: cubic-bezier(0.694, 0.0482, 0.335, 1)
+  -moz-transition-property: all
+  -moz-transition-duration: 0.1s
+  -moz-transition-timing-function: cubic-bezier(0.694, 0.0482, 0.335, 1)
+  -ms-transition-property: all
+  -ms-transition-duration: 0.1s
+  -ms-transition-timing-function: cubic-bezier(0.694, 0.0482, 0.335, 1)
+  -o-transition-property: all
+  -o-transition-duration: 0.1s
+  -o-transition-timing-function: cubic-bezier(0.694, 0.0482, 0.335, 1)
+  transition-property: all
+  transition-duration: 0.1s
+  transition-timing-function: cubic-bezier(0.694, 0.0482, 0.335, 1)
