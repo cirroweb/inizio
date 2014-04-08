@@ -1,0 +1,972 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>inizio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/6df2b309.favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 8]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+
+        <link rel="stylesheet" href="bower_components/google-code-prettify/styles/desert.css" />
+        <link rel="stylesheet" href="styles/6fb18e8a.main.css">
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <div id="navicon-button">
+          <div class="navicon"></div>
+        </div>
+
+        <div class="nav-wrap">
+          <nav>
+            <a href="/login.html">Login</a>
+            <a href="#grid">Grid</a>
+            <a href="#type">Type</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#buttons">Buttons</a>
+          </nav>
+        </div>
+
+        <div class="main-wrap">
+            <div class="cover text-center">
+              <div class="monster">INIZIO</div>
+            </div>
+
+            <section id="grid">
+              <div class="container">
+                <div class="row">
+                  <div class="col-2">
+                    </span> 
+                      <h2>Grid</h2>
+                    <span> 
+                    <span>
+                      <p class="lead">The grid system is designed to provide a fluid grid that is very simple and highly semantic.</p>
+                      <p>
+                        Wrap rows with a row div then simply use the column wrapper to specify the number of columns you want <code>col-2</code>. Every direct child within the column wrapper will be given a float, made a block, and given the appropiate percentage width.
+                      </p>
+
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-3&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    
+              <div class="row">
+                <div class="col-2">
+                  <div class="bordered space-half text-center">
+                    2
+                  </div>
+                  <div class="bordered space-half text-center">
+                    2
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-3">
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                  <div class="bordered space-half text-center">
+                    3
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-4">
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                  <div class="bordered space-half text-center">
+                    4
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-5">
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                  <div class="bordered space-half text-center">
+                    5
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-6">
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                  <div class="bordered space-half text-center">
+                    6
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-8">
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                  <div class="bordered space-half text-center">
+                    8
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-12">
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                  <div class="bordered space-half text-center">
+                    12
+                  </div>
+                </div>
+              </div>
+
+            </span>
+          </div>
+        </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <section id="type">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span>
+                    <h2>Type</h2>
+                  </span>
+                  <span>
+                    <article>
+                    <h1>Heading H1 <small>Secondary Text</small></h1>
+                    <h2>Heading H2 <small>Secondary Text</small></h2>
+                    <h3>Heading H3 <small>Secondary Text</small></h3>
+                    <h4>Heading H4 <small>Secondary Text</small></h4>
+                    <h5>Heading H5 <small>Secondary Text</small></h5>
+                    <h6>Heading H6 <small>Secondary Text</small></h6>
+
+                    <p class="space-half-top">Heading font and weight can be changed in the <code>_variables.sass</code> under <code>$headingsFontFamily</code> & <code>$headingsFontWeight</code>. You can add smaller secondary text by wrapping a <code>&lt;small&gt;</code> around text within the heading tag.</p>
+
+<pre>
+&lt;h1&gt;Heading H1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading H2 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;Heading H3 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;Heading H4 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;Heading H5 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;Heading H6 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h6&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h3>Lead Text</h3>
+
+                    <p class="lead">Nicholas Cage is a lengend and this is why.</p>
+                    <p>Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.</p>
+<pre>
+&lt;p class=&quot;lead&quot;&gt;This is a lead into the paragraph.&lt;/p&gt;
+&lt;p&gt;Honorably Discharged Army Ranger Cameron Poe is sentenced to a maximum-security federal penitentiary to serve a 7 to 10-year term for using his military knowledge to kill a drunk man who had been attempting to assault his pregnant wife Tricia (Monica Potter). Eight years later, Poe is paroled on good conduct, and is eager to see his daughter Casey (Landry Allbright) whom he has never met.&lt;/p&gt;
+</pre>
+                </article>
+                <article>
+                  <h3>Bold, Italics, & Small Text</h3>
+
+                  <p>The bold font weight can be changed in the <code>_variables.sass</code> with <code>$boldFontWeight</code></p>
+
+                  <p>
+                    Nicolas Kim Coppola, born January 7, 1964, known professionally as <strong>Nicolas Cage</strong>, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from <em>romantic comedies and dramas to science fiction and action films</em>. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.<br>
+
+                    <small>Source: Wikipedia.com</small>
+                  </p>
+<pre>
+&lt;p&gt;
+Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt;Nicolas Cage&lt;/strong&gt;, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from &lt;em&gt;romantic comedies and dramas to science fiction and action films&lt;/em&gt;. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.&lt;br&gt;
+
+&lt;small&gt;Source: Wikipedia.com&lt;/small&gt;
+&lt;/p&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h3>Text Alignment</h3>
+                    <div class="space-half-bottom">
+                      <div class="text-left">Nicholas Cage Left</div>
+                      <div class="text-center">Nicholas Cage Center</div>
+                      <div class="text-right">Nicholas Cage Right</div>
+                    </div>
+<pre>
+&lt;div class=&quot;text-left&quot;&gt;Nicholas Cage Left&lt;/div&gt;
+&lt;div class=&quot;text-center&quot;&gt;Nicholas Cage Center&lt;/div&gt;
+&lt;div class=&quot;text-right&quot;&gt;Nicholas Cage Right&lt;/div&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h3>Blockquotes</h3>
+                    <blockquote>
+                      <p>In February 2011, Cage said that, at a certain point in his career, he realized that he had developed his own method of acting, which he described as "Nouveau Shamanic." He noted, "at some point I'll have to write a book" about it.</p>
+                      <cite title="Sir Nicholas Cage">Sir Nicholas Cage</cite>
+                    </blockquote>
+<pre>
+&lt;blockquote&gt;
+  &lt;p&gt;In February 2011, Cage said that, at a certain point in his career, he realized that he had developed his own method of acting, which he described as &quot;Nouveau Shamanic.&quot; He noted, &quot;at some point I&#039;ll have to write a book&quot; about it.&lt;/p&gt;
+  &lt;cite title="Sir Nicholas Cage"&gt;Sir Nicholas Cage&lt;/cite&gt;
+&lt;/blockquote&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h3>Lists</h3>
+                    <h5>Unordered</h5>
+                    <ul>
+                      <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                        <ul>
+                          <li>National Treasure 1</li>
+                          <li>National Treasure 2</li>
+                          <li>National Treasure 3</li>
+                        </ul>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                    </ul>
+
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Ordered</h5>
+                  <ol>
+                    <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                  </ol>
+<pre>
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+                  <h5>Unstyled</h5>
+                  <ul class="unstyled">
+                    <li>Gone in Sixty Seconds</li>
+                      <li>Adaptation</li>
+                      <li>National Treasure</li>
+                      <li>The Wicker Man</li>
+                      <li>Con Air</li>
+                  </ul>
+<pre>
+&lt;ul class="unstyled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Inline</h5>
+                  <ul class="inline">
+                    <li>Gone in Sixty Seconds</li>
+                    <li>Adaptation</li>
+                    <li>National Treasure</li>
+                    <li>The Wicker Man</li>
+                    <li>Con Air</li>
+                  </ul>
+<pre>
+&lt;ul class="inline"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+                  <h5>Description</h5>
+                  <dl>
+                    <dt>Gone in Sixty Seconds</dt>
+                    <dd>Best movie in history</dd>
+                    <dt>Adaptation</dt>
+                    <dd>Second best movie in history</dd>
+                    <dt>National Treasure</dt>
+                    <dd>National box office hit</dd>
+                  </dl>
+<pre>
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+
+                  </article>
+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <section id="tables">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span>
+                    <h2>Tables</h2>
+                  </span>
+                  <span>
+                    <article>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Bordered</h5>
+                    <table class="bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="bordered"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Table Hover</h5>
+                    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Striped</h5>
+                    <table class="striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="striped"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                   <article>
+                    <h5>Table Hover</h5>
+                    <table class="hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Condensed</h5>
+                    <table class="condensed">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="condensed"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Responsive</h5>
+                    <p>Adding a wrapper div with the class <code>.table-responsive</code> enables the wrapper div to overflow-x to allow scrolling of large tables on smaller screens. This will only work on screens below 768px.</p>
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                            <th>Nicolas</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                            <td>Cage</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+<pre>
+&lt;div class="table-responsive"&gt;
+  &lt;table&gt;
+    ...
+  &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                  </article>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <section id="forms">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span><h2>Forms</h2></span>
+                  <span>
+
+                  <article>
+                    <h5>Inputs</h5>
+                    <form role="form">
+                      <label for="passW">Password</label>
+                      <input type="password" id="passW" placeholder="Pass on the word">
+                      <label for="bio">Bio</label>
+                      <textarea id="bio"></textarea>
+                      <input type="email" placeholder="No label, only placeholder">
+                      <label for="age">Small Input</label>
+                      <input type="number" id="age" class="sm">
+                      <label for"half">Half Size</label>
+                      <input type="text" id="half" class="half">
+                      <label for="bday">What is Nic Cage's bday?</label>
+                      <input type="date" id="bday" class="half" placeholder="mm/dd/yyyy">
+                    </form>
+<pre>
+&lt;form role=&quot;form&quot;&gt;
+  &lt;label for=&quot;passW&quot;&gt;Password&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;passW&quot; placeholder=&quot;Pass on the word&quot;&gt;
+  &lt;label for=&quot;bio&quot;&gt;Bio&lt;/label&gt;
+  &lt;textarea id=&quot;bio&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;email&quot; placeholder=&quot;No label, only placeholder&quot;&gt;
+  &lt;label for=&quot;age&quot;&gt;Small Input&lt;/label&gt;
+  &lt;input type=&quot;number&quot; id=&quot;age&quot; class=&quot;sm&quot;&gt;
+  &lt;label for&quot;half&quot;&gt;Half Size&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;half&quot; class=&quot;half&quot;&gt;
+  &lt;label for=&quot;bday&quot;&gt;What is Nic Cage&#039;s bday?&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;bday&quot; class=&quot;half&quot; placeholder=&quot;mm/dd/yyyy&quot;&gt;
+&lt;/form&gt;
+</pre>
+
+                  </article>
+                  
+                  <article>
+                    <h5>Checkboxes</h5>
+                    <input type="checkbox" id="c1" name="group1">
+                    <label for="c1">Unchecked</label>
+                    <input type="checkbox" id="c2" name="group1" checked>
+                    <label for="c2">Checked</label>
+                    <input type="checkbox" id="c5" name="group1" disabled>
+                    <label for="c5">Disabled</label>
+                    <input type="checkbox" id="c6" name="group1" checked disabled>
+                    <label for="c6">Checked & Disabled</label>
+
+<pre>
+&lt;input type=&quot;checkbox&quot; id=&quot;c1&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;c1&quot;&gt;Unchecked&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c2&quot; name=&quot;group1&quot; checked&gt;
+&lt;label for=&quot;c2&quot;&gt;Checked&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c5&quot; name=&quot;group1&quot; disabled&gt;
+&lt;label for=&quot;c5&quot;&gt;Disabled&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c6&quot; name=&quot;group1&quot; checked disabled&gt;
+&lt;label for=&quot;c6&quot;&gt;Checked &amp; Disabled&lt;/label&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Checkbox Inline</h5>
+                    <input type="checkbox" class="inline" id="c3" name="group2">
+                    <label for="c3">Check Box Inline</label>
+                    <input type="checkbox" class="inline" id="c4" name="group2">
+                    <label for="c4">Check Box Inline</label>
+<pre>
+&lt;input type=&quot;checkbox&quot; class=&quot;inline&quot; value=&quot;None&quot; id=&quot;c3&quot; name=&quot;group1&quot; &gt;
+&lt;label for=&quot;c3&quot;&gt;Check Box Inline&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;inline&quot; value=&quot;None&quot; id=&quot;c4&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;c4&quot;&gt;Check Box Inline&lt;/label&gt;
+</pre>
+
+                  </article>
+                  <article>
+                    <h5>Radios</h5>
+                    <input type="radio" id="r1" name="group1" checked>
+                    <label for="r1">Radio On</label>
+                    <input type="radio" id="r2" name="group1">
+                    <label for="r2">Radio Off</label>
+                    <input type="radio" id="r3" name="group1" disabled>
+                    <label for="r3">Disabled</label>
+                    <input type="radio" id="r4" name="group1" checked disabled>
+                    <label for="r4">Radio On & Disabled</label>
+<pre>
+&lt;input type=&quot;radio&quot; id=&quot;r1&quot; name=&quot;group1&quot; checked&gt;
+&lt;label for=&quot;r1&quot;&gt;Radio On&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r2&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;r2&quot;&gt;Radio Off&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r3&quot; name=&quot;group1&quot; disabled&gt;
+&lt;label for=&quot;r3&quot;&gt;Disabled&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r4&quot; name=&quot;group1&quot; checked disabled&gt;
+&lt;label for=&quot;r4&quot;&gt;Radio On &amp; Disabled&lt;/label&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Toggles</h5>
+                    <p>Toggle buttons are a disguised checkbox and can be saved as booleans.</p>
+                    <form role="form">
+                      <label class="toggle" for="nic">
+                        <input type="checkbox" id="nic">
+                        <div>
+                          <span class="toggle-circle"></span>
+                        </div>
+                        <span>Nicholas Cage Radio Station</span>
+                      </label>
+                      <label class="toggle" for="cage">
+                        <input type="checkbox" id="cage">
+                        <div>
+                          <span class="toggle-circle"></span>
+                        </div>
+                        <span>Live Nic Cage Video Feed</span>
+                      </label>
+                    </form>
+<pre>
+&lt;label class=&quot;toggle&quot; for=&quot;nic&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;nic&quot;&gt;
+  &lt;div&gt;
+    &lt;span class=&quot;toggle-circle&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Nicholas Cage Radio Station&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;toggle&quot; for=&quot;cage&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;cage&quot;&gt;
+  &lt;div&gt;
+    &lt;span class=&quot;toggle-circle&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Live Nic Cage Video Feed&lt;/span&gt;
+&lt;/label&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Inline Form</h5>
+                    <form class="form-inline" role="form">
+                      <input type="search" id="search" placeholder="...">
+                      <button type="submit">Search</button>
+                    </form>
+<pre>
+&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;
+  &lt;input type=&quot;search&quot; id=&quot;search&quot; placeholder=&quot;...&quot;&gt;
+  &lt;button type=&quot;submit&quot; &gt;Search&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Selects</h5>
+                    <label>Which spelling do you prefer?</label>
+                    <div class="select half">
+                      <select>
+                        <option>Nic Cage</option>
+                        <option>Nik Kage</option>
+                        <option>Nicholas Kage</option>
+                        <option>Niki Cagi</option>
+                        <option>Nick Rage</option>
+                      </select>
+                    </div>
+
+                    <select class="sm"multiple>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+<pre>
+&lt;label&gt;Which spelling do you prefer?&lt;/label&gt;
+&lt;div class=&quot;select half&quot;&gt;
+  &lt;select&gt;
+    &lt;option&gt;Nic Cage&lt;/option&gt;
+    &lt;option&gt;Nik Kage&lt;/option&gt;
+    &lt;option&gt;Nicholas Kage&lt;/option&gt;
+    &lt;option&gt;Niki Cagi&lt;/option&gt;
+    &lt;option&gt;Nick Rage&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;select class=&quot;sm&quot;multiple&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Fieldsets</h5>
+                    <form role="form">
+                      <fieldset>
+                        <label for="try">Try to spell his name</label>
+                        <input type="text" class="half" id="try">
+                      </fieldset>
+
+                      <fieldset disabled>
+                        <label for="nope">Your Fav Nic Cage Movie</label>
+                        <input type="text" class="half" id="nope" placeholder="Disabled input">
+
+                        <input type="checkbox" id="c1" name="group1">
+                        <label for="c1">Check if you love Nic Cage</label>
+                        <button type="submit">Submit</button>
+                      </fieldset>
+                    </form>
+<pre>
+&lt;form role=&quot;form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;label for=&quot;try&quot;&gt;Try to spell his name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;half&quot; id=&quot;try&quot;&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset disabled&gt;
+    &lt;label for=&quot;nope&quot;&gt;Your Fav Nic Cage Movie&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;half&quot; id=&quot;nope&quot; placeholder=&quot;Disabled input&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c1&quot; name=&quot;group1&quot;&gt;
+    &lt;label for=&quot;c1&quot;&gt;Check if you love Nic Cage&lt;/label&gt;
+    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+                  </article>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>  
+
+          <hr>
+
+          <section id="buttons">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span><h2>Buttons</h2></span>
+                  <span>
+                    <article>
+                      <button>Primary</button>
+                      <button class="alt">Alternative</button>
+                      <a role="button" class="hollow">Hollow</a>
+                      <a role="button" class="full">Full Width</a>
+                      <a role="button" class="full hollow">Full Width Hollow</a>
+<pre>
+&lt;button&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;alt&quot;&gt;Alternative&lt;/button&gt;
+&lt;a role=&quot;button&quot; class=&quot;hollow&quot;&gt;Hollow&lt;/a&gt;
+&lt;a role=&quot;button&quot; class=&quot;full&quot;&gt;Full Width&lt;/a&gt;
+&lt;a role=&quot;button&quot; class=&quot;full hollow&quot;&gt;Full Width Hollow&lt;/a&gt;
+</pre>
+                    </article>
+
+                    <article>
+                      <h5>Button Sizes</h5>
+                      <a role="button" class="sm">Small</a>
+                      <a role="button">Default</a>
+                      <a role="button" class="lg">Large</a>
+                    </article>
+                    <article>
+                      <a role="button" class="sm alt">Small</a>
+                      <a role="button" class="alt">Default</a>
+                      <a role="button" class="lg alt">Large</a>
+                    </article>
+                    <article>
+                      <div class="space-half-bottom">
+                        <a role="button" class="sm hollow">Small</a>
+                        <a role="button" class="hollow">Default</a>
+                        <a role="button" class="lg hollow">Large</a>
+                      </div>  
+<pre>
+&lt;a role=&quot;button&quot; class=&quot;sm&quot;&gt;Small&lt;/a&gt;
+&lt;a role=&quot;button&quot;&gt;Default&lt;/a&gt;
+&lt;a role=&quot;button&quot; class=&quot;lg&quot;&gt;Large&lt;/a&gt;
+</pre>
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+        
+        </div> <!-- /.main-wrap -->
+
+
+
+        <script src="scripts/55c91991.vendor.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+            (function(){
+                $('pre').addClass('prettyprint');
+                prettyPrint();
+            })();
+        </script>
+
+        <script src="scripts/036656e4.plugins.js"></script>
+
+        <script src="scripts/f1a48b15.main.js"></script>
+</body>
+</html>
