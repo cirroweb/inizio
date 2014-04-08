@@ -3,15 +3,56 @@
 // --------------------------------------------------
 
 button,
-a[role="button"]
+a[role="button"],
+input[type="submit"]
   display: inline-block
   margin-bottom: 0
   font-weight: inherit
   text-align: center
+  font-size: $baseFontSize
+  color: $primary-button-color
   vertical-align: middle
   cursor: pointer
   background-image: none
   border: 1px solid transparent
   white-space: nowrap
-  background: $primaryButtonColor
+  background: $primary-button-bg
+  padding: $button-padding
+  height: $button-height
+  -webkit-font-smoothing: antialiased
+  +transition
+  &,
+  &:active,
+  &.active
+    &:focus
+      outline: none
+  &:hover,
+  &:focus
+    text-decoration: none
+    background: $primary-button-hover
+  &:active,
+  &.active
+    outline: 0
+    background-image: none
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+    cursor: not-allowed
+    pointer-events: none
+    opacity: 0.5
 
+  // Hollow Button
+  &.hollow
+    background: transparent
+    border: 1px solid $black
+    color: $black
+    &:hover
+      background: black
+      color: white
+      -webkit-font-smoothing: antialiased
+
+  // Full width buttons
+  &.full
+    display: block
+    width: 100%
+    margin: 10px 0

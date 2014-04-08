@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
         <!--[if lt IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
         <!--[if IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
         <!--[if IE 8]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
@@ -27,6 +27,11 @@
         <div class="nav-wrap">
           <nav>
             <a href="/login.html">Login</a>
+            <a href="#grid">Grid</a>
+            <a href="#type">Type</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#buttons">Buttons</a>
           </nav>
         </div>
 
@@ -35,7 +40,7 @@
               <h1>INIZIO</h1>
             </div>
 
-            <section>
+            <section id="grid">
               <div class="container">
                 <div class="row">
                   <div class="col-2">
@@ -228,7 +233,7 @@
 
           <hr>
 
-          <section>
+          <section id="type">
             <div class="container">
               <div class="row">
                 <div class="col-2">
@@ -400,7 +405,7 @@ Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt
 
           <hr>
 
-          <section>
+          <section id="tables">
             <div class="container">
               <div class="row">
                 <div class="col-2">
@@ -652,38 +657,256 @@ Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt
 
           <hr>
 
-          <section>
+          <section id="forms">
             <div class="container">
               <div class="row">
                 <div class="col-2">
                   <span><h2>Forms</h2></span>
                   <span>
+
+                  <article>
+                    <h5>Inputs</h5>
                     <form role="form">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Check me out
-                        </label>
-                      </div>
-                      <button type="submit">Submit</button>
+                      <label for="passW">Password</label>
+                      <input type="password" id="passW" placeholder="Pass on the word">
+                      <label for="bio">Bio</label>
+                      <textarea id="bio"></textarea>
+                      <input type="email" placeholder="No label, only placeholder">
+                      <label for="age">Small Input</label>
+                      <input type="number" id="age" class="sm">
+                      <label for"half">Half Size</label>
+                      <input type="text" id="half" class="half">
+                      <label for="bday">What is Nic Cage's bday?</label>
+                      <input type="date" id="bday" class="half" placeholder="mm/dd/yyyy">
+                      <input type
                     </form>
+<pre>
+&lt;form role=&quot;form&quot;&gt;
+  &lt;label for=&quot;passW&quot;&gt;Password&lt;/label&gt;
+  &lt;input type=&quot;password&quot; id=&quot;passW&quot; placeholder=&quot;Pass on the word&quot;&gt;
+  &lt;label for=&quot;bio&quot;&gt;Bio&lt;/label&gt;
+  &lt;textarea id=&quot;bio&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;email&quot; placeholder=&quot;No label, only placeholder&quot;&gt;
+  &lt;label for=&quot;age&quot;&gt;Small Input&lt;/label&gt;
+  &lt;input type=&quot;number&quot; id=&quot;age&quot; class=&quot;sm&quot;&gt;
+  &lt;label for&quot;half&quot;&gt;Half Size&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;half&quot; class=&quot;half&quot;&gt;
+  &lt;label for=&quot;bday&quot;&gt;What is Nic Cage&#039;s bday?&lt;/label&gt;
+  &lt;input type=&quot;date&quot; id=&quot;bday&quot; class=&quot;half&quot; placeholder=&quot;mm/dd/yyyy&quot;&gt;
+&lt;/form&gt;
+</pre>
+
+                  </article>
+                  
+                  <article>
+                    <h5>Checkboxes</h5>
+                    <input type="checkbox" id="c1" name="group1">
+                    <label for="c1">Unchecked</label>
+                    <input type="checkbox" id="c2" name="group1" checked>
+                    <label for="c2">Checked</label>
+                    <input type="checkbox" id="c5" name="group1" disabled>
+                    <label for="c5">Disabled</label>
+                    <input type="checkbox" id="c6" name="group1" checked disabled>
+                    <label for="c6">Checked & Disabled</label>
+
+<pre>
+&lt;input type=&quot;checkbox&quot; id=&quot;c1&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;c1&quot;&gt;Unchecked&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c2&quot; name=&quot;group1&quot; checked&gt;
+&lt;label for=&quot;c2&quot;&gt;Checked&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c5&quot; name=&quot;group1&quot; disabled&gt;
+&lt;label for=&quot;c5&quot;&gt;Disabled&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c6&quot; name=&quot;group1&quot; checked disabled&gt;
+&lt;label for=&quot;c6&quot;&gt;Checked &amp; Disabled&lt;/label&gt;
+</pre>
+                  </article>
+                  <article>
+                    <h5>Checkbox Inline</h5>
+                    <input type="checkbox" class="inline" id="c3" name="group2">
+                    <label for="c3">Check Box Inline</label>
+                    <input type="checkbox" class="inline" id="c4" name="group2">
+                    <label for="c4">Check Box Inline</label>
+<pre>
+&lt;input type=&quot;checkbox&quot; class=&quot;inline&quot; value=&quot;None&quot; id=&quot;c3&quot; name=&quot;group1&quot; &gt;
+&lt;label for=&quot;c3&quot;&gt;Check Box Inline&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;inline&quot; value=&quot;None&quot; id=&quot;c4&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;c4&quot;&gt;Check Box Inline&lt;/label&gt;
+</pre>
+
+                  </article>
+                  <article>
+                    <h5>Radios</h5>
+                    <input type="radio" id="r1" name="group1" checked>
+                    <label for="r1">Radio On</label>
+                    <input type="radio" id="r2" name="group1">
+                    <label for="r2">Radio Off</label>
+                    <input type="radio" id="r3" name="group1" disabled>
+                    <label for="r3">Disabled</label>
+                    <input type="radio" id="r4" name="group1" checked disabled>
+                    <label for="r4">Radio On & Disabled</label>
+<pre>
+&lt;input type=&quot;radio&quot; id=&quot;r1&quot; name=&quot;group1&quot; checked&gt;
+&lt;label for=&quot;r1&quot;&gt;Radio On&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r2&quot; name=&quot;group1&quot;&gt;
+&lt;label for=&quot;r2&quot;&gt;Radio Off&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r3&quot; name=&quot;group1&quot; disabled&gt;
+&lt;label for=&quot;r3&quot;&gt;Disabled&lt;/label&gt;
+&lt;input type=&quot;radio&quot; id=&quot;r4&quot; name=&quot;group1&quot; checked disabled&gt;
+&lt;label for=&quot;r4&quot;&gt;Radio On &amp; Disabled&lt;/label&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Toggles</h5>
+                    <p>Toggle buttons are a disguised checkbox and can be saved as booleans.</p>
+                    <form role="form">
+                      <label class="toggle" for="nic">
+                        <input type="checkbox" id="nic">
+                        <div>
+                          <span class="toggle-circle"></span>
+                        </div>
+                        <span>Nicholas Cage Radio Station</span>
+                      </label>
+                      <label class="toggle" for="cage">
+                        <input type="checkbox" id="cage">
+                        <div>
+                          <span class="toggle-circle"></span>
+                        </div>
+                        <span>Live Nic Cage Video Feed</span>
+                      </label>
+                    </form>
+<pre>
+&lt;label class=&quot;toggle&quot; for=&quot;nic&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;nic&quot;&gt;
+  &lt;div&gt;
+    &lt;span class=&quot;toggle-circle&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Nicholas Cage Radio Station&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class=&quot;toggle&quot; for=&quot;cage&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;cage&quot;&gt;
+  &lt;div&gt;
+    &lt;span class=&quot;toggle-circle&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;span&gt;Live Nic Cage Video Feed&lt;/span&gt;
+&lt;/label&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Inline Form</h5>
+                    <form class="form-inline" role="form">
+                      <input type="search" id="search" placeholder="...">
+                      <button type="submit">Search</button>
+                    </form>
+<pre>
+&lt;form class=&quot;form-inline&quot; role=&quot;form&quot;&gt;
+  &lt;input type=&quot;search&quot; id=&quot;search&quot; placeholder=&quot;...&quot;&gt;
+  &lt;button type=&quot;submit&quot; &gt;Search&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Selects</h5>
+                    <label>Which spelling do you prefer?</label>
+                    <div class="select half">
+                      <select>
+                        <option>Nic Cage</option>
+                        <option>Nik Kage</option>
+                        <option>Nicholas Kage</option>
+                        <option>Niki Cagi</option>
+                        <option>Nick Rage</option>
+                      </select>
+                    </div>
+
+                    <select class="sm"multiple>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+<pre>
+&lt;label&gt;Which spelling do you prefer?&lt;/label&gt;
+&lt;div class=&quot;select half&quot;&gt;
+  &lt;select&gt;
+    &lt;option&gt;Nic Cage&lt;/option&gt;
+    &lt;option&gt;Nik Kage&lt;/option&gt;
+    &lt;option&gt;Nicholas Kage&lt;/option&gt;
+    &lt;option&gt;Niki Cagi&lt;/option&gt;
+    &lt;option&gt;Nick Rage&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;select class=&quot;sm&quot;multiple&gt;
+  &lt;option&gt;1&lt;/option&gt;
+  &lt;option&gt;2&lt;/option&gt;
+  &lt;option&gt;3&lt;/option&gt;
+  &lt;option&gt;4&lt;/option&gt;
+  &lt;option&gt;5&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+                  </article>
+
+                  <article>
+                    <h5>Fieldsets</h5>
+                    <form role="form">
+                      <fieldset>
+                        <label for="try">Try to spell his name</label>
+                        <input type="text" class="half" id="try">
+                      </fieldset>
+
+                      <fieldset disabled>
+                        <label for="nope">Your Fav Nic Cage Movie</label>
+                        <input type="text" class="half" id="nope" placeholder="Disabled input">
+
+                        <input type="checkbox" id="c1" name="group1">
+                        <label for="c1">Check if you love Nic Cage</label>
+                        <button type="submit">Submit</button>
+                      </fieldset>
+                    </form>
+<pre>
+&lt;form role=&quot;form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;label for=&quot;try&quot;&gt;Try to spell his name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;half&quot; id=&quot;try&quot;&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset disabled&gt;
+    &lt;label for=&quot;nope&quot;&gt;Your Fav Nic Cage Movie&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;half&quot; id=&quot;nope&quot; placeholder=&quot;Disabled input&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;c1&quot; name=&quot;group1&quot;&gt;
+    &lt;label for=&quot;c1&quot;&gt;Check if you love Nic Cage&lt;/label&gt;
+    &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+                  </article>  
                   </span>
                 </div>
               </div>
             </div>
           </section>  
+
+          <hr>
+
+          <section id="buttons">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span><h2>Buttons</h2></span>
+                  <span>
+                    <article>
+                      <button>Primary</button>
+                      <a role="button" class="hollow">Hollow</a>
+                      <a role="button" class="full">Full Width</a>
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
 
 
         

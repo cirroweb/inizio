@@ -7,7 +7,7 @@ $black: #050505
 $white: #fff
 $grayLight: #f5f5f5
 $gray: #f7f7f7
-$grayDark: #e7e7e7
+$grayDark: #c1c1c1
 $grayDarkest: #777
 
 $borders: #CCC
@@ -29,12 +29,17 @@ $orange: #FA921E
 $linkColor: $grayDarkest
 $linkHoverColor: $black
 
-$primaryColor: $red
+$primaryColor: $blue
 $bodyBackground: #EEE
 $hrColor: $red
 
 $borderColor: $grayDark
-$primaryButtonColor: $primaryColor
+
+$button-padding: 9px 30px
+$button-height: 43px
+$primary-button-color: white
+$primary-button-bg: $primaryColor
+$primary-button-hover: darken($primaryColor, 10%)
 
 $maxContainerWidth: 1400px
 $globalSpacing: 30px
@@ -45,14 +50,16 @@ $globalSpacing: 30px
 // 
 
 //"Helvetica Neue", Helvetica, Arial, sans-serif
+//$baseFontFamily: 'Merriweather', serif
 $baseFontFamily: 'Merriweather', serif
 $baseFontWeight: 400
 $baseLineHeight: 1.6
+$baseFontSize: 16px
 
-$headingsFontFamily: 'Merriweather', serif
-$headingsFontWeight: bold
+$headingsFontFamily: 'Merriweather Sans', serif
+$headingsFontWeight: 700
 
-$boldFontWeight: bold
+$boldFontWeight: 700
 
 $altFontFamily: Georgia, Georgia, serif 
 $altFontWeight: normal
@@ -66,6 +73,7 @@ $table-bg: $bodyBackground
 $table-border-color: $grayDarkest
 $table-stripe-color: $grayLight
 $table-bg-hover: $grayDark
+$table-cell-padding: 8px
 
 
 //
@@ -77,6 +85,9 @@ $input-bg: $bodyBackground
 $input-border: $black
 $input-border-radius: 0
 $input-focus: $blue
+$input-disabled: $grayDark
+$input-padding: 7px 10px
+$input-height: $button-height
 
 
 
