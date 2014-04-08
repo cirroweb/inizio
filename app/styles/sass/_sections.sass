@@ -1,0 +1,27 @@
+section
+  padding: ($globalSpacing * 2) 0
+  article
+    padding: ($globalSpacing / 2) 0
+    &:first-of-type
+      padding: 0 0 ($globalSpacing / 2) 0
+    &:last-of-type
+      padding: ($globalSpacing / 2) 0 0
+
+.cover
+  position: relative
+  width: 100%
+  padding: 15% 5%
+  background-image: url(../images/cover_shadow.png)
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-color: $red
+  color: white
+  -webkit-font-smoothing: antialiased
+
+hr
+  margin: $globalSpacing auto
+  border: 0
+  border-top: 1px solid
+  clear: both
+  width: 90%
+  max-width: $maxContainerWidth

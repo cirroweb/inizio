@@ -9,12 +9,13 @@ input[type="submit"]
   margin-bottom: 0
   font-weight: inherit
   text-align: center
+  font-family: $headingsFontFamily
   font-size: $baseFontSize
   color: $primary-button-color
   vertical-align: middle
   cursor: pointer
   background-image: none
-  border: 1px solid transparent
+  border: $button-border solid transparent
   white-space: nowrap
   background: $primary-button-bg
   padding: $button-padding
@@ -41,13 +42,20 @@ input[type="submit"]
     pointer-events: none
     opacity: 0.5
 
+  // Alternative button
+  &.alt
+    background: $alt-button-bg
+    color: $alt-button-color
+    &:hover
+      background: $alt-button-hover
+
   // Hollow Button
   &.hollow
     background: transparent
-    border: 1px solid $black
-    color: $black
+    border: $button-border solid $hollow-button-color
+    color: $hollow-button-color
     &:hover
-      background: black
+      background: $hollow-button-color
       color: white
       -webkit-font-smoothing: antialiased
 
@@ -56,3 +64,13 @@ input[type="submit"]
     display: block
     width: 100%
     margin: 10px 0
+
+  // Button Sizes
+  &.sm
+    padding: 5px 15px
+    font-size: 0.8em
+    height: 30px
+
+  &.lg
+    padding: 18px 50px
+    height: 60px

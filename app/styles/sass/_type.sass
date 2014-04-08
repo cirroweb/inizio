@@ -1,0 +1,125 @@
+// ..............................................
+//
+//  This is my type of section...
+//
+// ..............................................
+
+p
+	margin: 0 0 15px
+
+.lead
+	font-size: 1.2em
+
+small
+	font-size: .85em
+
+.monster
+	font-size: 150px
+	font-family: $headingsFontFamily
+	font-weight: $headingsFontWeight
+
+
+strong
+	font-weight: $boldFontWeight
+
+em
+	font-style: italic
+
+cite
+	font-style: normal
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 10px 0
+	font-family: $headingsFontFamily
+	font-weight: $headingsFontWeight
+	line-height: 1.1
+	text-rendering: optimizelegibility
+	small
+		font-size: .65em
+		color: $grayDarkest
+
+h1
+	font-size: 48px
+	margin-bottom: 40px
+
+h2
+	font-size: 36px
+	margin-bottom: 30px
+
+h3
+	font-size: 24px
+	margin-bottom: 20px
+
+h4
+	font-size: 21px
+
+h5
+	font-size: 18px
+
+h6
+	font-size: 15px
+
+ul, ol
+	padding: 0
+	margin: 0 0 10px 20px
+
+ul
+	ul, ol
+		margin-bottom: 0
+
+ol
+	ol, ul
+		margin-bottom: 0
+
+li
+	line-height: inherit
+	display: list-item
+
+ul.unstyled, ol.unstyled
+	margin-left: 0
+	list-style: none
+
+ul.inline 
+	margin: 0 0 10px
+	& > li
+		display: inline-block
+		padding-left: 5px
+		padding-right: 5px
+
+dl
+	margin-bottom: 20px
+
+dt
+	font-weight: $boldFontWeight
+
+dd
+	margin-left: 0
+
+abbr
+	&[title]
+		cursor: help
+		border-bottom: 1px dotted $grayLight
+
+blockquote
+	padding: ($globalSpacing / 2) 0 ($globalSpacing / 2) $globalSpacing
+	margin: 0 0 20px
+	font-size: 1.2em
+	border-left: 5px solid $primaryColor
+	p
+		margin-bottom: 0
+	cite
+		font-size: 0.8em
+		color: $grayDark
+		display: block
+		margin-top: 15px
+		font-style: italic
+		&:before
+			content: '\2014 \00A0'
+
+q
+	&:before, &:after
+		content: ""
+
+blockquote
+	&:before, &:after
+		content: ""
