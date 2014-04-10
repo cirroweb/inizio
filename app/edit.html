@@ -1,0 +1,276 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>inizio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
+        <!--[if lt IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 7]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+        <!--[if IE 8]><meta http-equiv="REFRESH" content="0;url=http://page-unavailable.com/unsupported-browser"><![endif]-->
+
+        <link rel="stylesheet" href="bower_components/google-code-prettify/styles/desert.css" />
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="bower_components/modernizr/modernizr.js"></script>
+
+    </head>
+    <body>
+        <div id="navicon-button">
+          <div class="navicon"></div>
+        </div>
+
+        <div class="nav-wrap">
+          <nav>
+            <a href="/login.html">Login</a>
+            <a href="#grid">Grid</a>
+            <a href="#type">Type</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#buttons">Buttons</a>
+          </nav>
+        </div>
+
+        <div class="main-wrap">
+          <section id="forms">
+            <div class="container">
+              <div class="row">
+                <div class="col-2">
+                  <span>
+                    <h2>Edit Profile</h2>
+                    <div class="profile-image">
+                      <img src="/images/edit_page/url.jpg"/>
+                    </div>
+                    <a role="button" class="hollow">Edit</a>
+                  </span>
+                  <span>
+                    <article>
+                      <form role="form">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" placeholder="Josh">
+                        <label for="name">Last Name</label>
+                        <input type="text" id="name" placeholder="Jenkins">
+
+                        <label for="bio">Bio/Artist Statement</label>
+                        <textarea id="bio" placeholder="Quisque sagittis convallis diam, non pretium dui blandit eget. Maecenas vehicula risus ac ligula egestas aliquet. Donec fermentum fringilla imperdiet. Quisque tempor ipsum sit amet turpis consectetur aliquam eget eu erat. Phasellus vitae vestibulum tellus. Aenean feugiat dictum consequat. Duis luctus dolor ut rutrum dignissim. Nunc consequat libero ante, a ornare leo dignissim eget."></textarea>
+
+
+                        <label for"radio">Are you a Colorado Resident? </label>
+                        <input type="radio" id="r1" name="group1" checked>
+                        <label for="r1">Yes</label>
+                        <input type="radio" id="r2" name="group1">
+                        <label for="r2">No</label>
+
+                        <label for"radio">Will you deliver artwork to NINEdot? </label>
+                        <input type="radio" id="r1" name="group1" checked>
+                        <label for="r1">Yes</label>
+                        <input type="radio" id="r2" name="group1">
+                        <label for="r2">No</label>
+
+                        <label for"radio">Do you do comission pieces? </label>
+                        <input type="radio" id="r1" name="group1" checked>
+                        <label for="r1">Yes</label>
+                        <input type="radio" id="r2" name="group1">
+                        <label for="r2">No</label>
+
+                        <h4 class="space-half-top"> Addresses </h4>
+                        <div class="address">
+                          <h5> Home Address </h5>
+                          <div class="street-address"> 
+                            1234 Liberty Lane
+                          </div>
+                          <div class="national-address"> 
+                            Denver, CO 80215 
+                          </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <div class="address space-half-top">
+                          <h5 class=""> Studio Address </h5>
+                          <div class="street-address"> 
+                            321 Contact Rd
+                          </div>
+                          <div class="national-address"> 
+                            Denver, CO 80215 
+                          </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <a role="button" class="full hollow">Add New Address</a>
+
+                        <h4 class="space-half-top"> Phone Numbers</h4>
+                        <div class="phone">
+                          <h5> Home Phone </h5>
+                          <div class="phone-number"> 720.352.4335 </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <div class="phone space-half-top">
+                          <h5> Cell Phone </h5>
+                          <div class="phone-number"> 720.352.4535 </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                         <a role="button" class="full hollow">Add New Phone Number</a>
+
+                        <h4 class="space-half-top"> Emails</h4>
+                        <div class="phone">
+                          <h5> Work Email </h5>
+                          <div class="phone-number"> fantasyarts@gmail.com </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <div class="phone space-half-top">
+                          <h5> Personal Email </h5>
+                          <div class="phone-number"> iamanartist@gmail.com </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <a role="button" class="full hollow">Add New Email</a>
+
+                        <h4 class="space-half-top"> Websites</h4>
+                        <div class="phone">
+                          <h5> Portfolio </h5>
+                          <div class="phone-number"> fantasyarts.com </div>
+                          <a role="button" class="hollow">Delete</a>
+                          <a role="button" class="hollow">Edit</a>
+                        </div>
+                        <a role="button" class="full hollow">Add New Website</a>
+
+                        <label for"radio">Are you represented by a gallery? </label>
+                        <input type="radio" id="r1" name="group1" checked>
+                        <label for="r1">Yes</label>
+                        <input type="radio" id="r2" name="group1">
+                        <label for="r2">No</label>
+                        <h4 class="space-half-top"> Gallery Information </h4>
+                        <label for="name">Contact</label>
+                        <input type="text" id="name" placeholder="Jon Stamos">
+                        <label for="name">Contact Email</label>
+                        <input type="text" id="name" placeholder="jstamos@gmail.com">
+                        <label for="address">Gallery Address Line 1</label>
+                        <input type="password" id="address" placeholder="1234 Liberty Rd">
+                        <label for="address">Gallery Address Line 2</label>
+                        <input type="text" id="address" placeholder="#306">
+                        <label for="city">Gallery City</label>
+                        <input type="text" id="city" placeholder="Denver">
+                        <label>Gallery State</label>
+                        <div class="select half">
+                          <select>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                          </select>
+                        </div>
+                        <label for="half">Gallery Zip</label>
+                        <input type="text" id="half" class="half" placeholder="80205">
+    
+                        <button type="submit">Update</button>
+                      </form>
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <section>
+            <div class="container">
+              <h2> Artwork </h2>
+              <div class="row">
+                <div class="col-4">
+                  <div class="art">
+                    <img src="/images/edit_page/010.jpg"/>
+                  </div>
+                  <div class="art">
+                    <img src="/images/edit_page/dolphin.jpg"/>
+                  </div>
+                  <div class="art">
+                    <img src="/images/edit_page/images.jpg"/>
+                  </div>
+                  <div class="art">
+                    <img src="/images/edit_page/Unicorn_fantasy.jpg"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-4">
+                  <div class="art"><img src="/images/edit_page/010.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/dolphin.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/images.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/Unicorn_fantasy.jpg"/></div>
+                </div>
+              </div>
+
+              <div class="row space-half-top">
+                <div class="col-4">
+                  <div class="art"><img src="/images/edit_page/010.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/dolphin.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/images.jpg"/></div>
+                  <div class="art"><img src="/images/edit_page/Unicorn_fantasy.jpg"/></div>
+                </div>           
+              </div>
+              <div class="row space-half-top">
+                <div class="col-1 drag-drop">
+                    <h4 class="space-half-top text-center"> Drag and Drop Area</h4>
+                </div> 
+              </div>
+              <a role="button" class="full hollow">Add New Art</a>           
+            </div>
+          </section>  
+          </section>
+        </div> <!-- /.main-wrap -->
+
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js"></script>
+        <script src="bower_components/google-code-prettify/src/prettify.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+            (function(){
+                $('pre').addClass('prettyprint');
+                prettyPrint();
+            })();
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
