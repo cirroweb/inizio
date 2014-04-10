@@ -85,10 +85,10 @@ div.select
   &:after
     content: "▼"
     right: 13px 
-    top: 0px
+    top: 1px
     bottom: 0
     padding: 15px 0 0 10px
-    border-left: 1px solid
+    border-left: $input-border-width solid $input-border
     font-size: 11px
     position: absolute
     pointer-events: none
@@ -129,12 +129,12 @@ input[type="color"]
   color: $input-color
   background-color: $input-bg
   background-image: none
-  border: 1px solid $input-border
+  border: $input-border-width solid $input-border
   border-radius: $input-border-radius
   +transition
   &:focus
     outline: none
-    border: 1px solid $input-focus
+    border: $input-border-width solid $input-focus
   &[disabled],
   &[readonly],
   fieldset[disabled] & 
@@ -220,7 +220,7 @@ input[type="checkbox"]
     &:before
       background-color: $input-disabled
       color: darken($input-disabled, 20%) !important
-      border: 1px solid darken($input-disabled, 20%) !important
+      border: $input-border-width solid darken($input-disabled, 20%) !important
   &.inline + label
     display: inline-block
     margin: -1px 20px 10px 0
@@ -245,14 +245,14 @@ input[type="checkbox"]
       font-size: 13px
       text-align: center
       line-height: 1.6
-      border: 1px solid $grayDarkest
+      border: $input-border-width solid $grayDarkest
       border-radius: 4px
 
 input[type="checkbox"]:checked + label:before
   content: "✓"
   color: $black
   font-weight: bold
-  border: 1px solid $black
+  border: $input-border-width solid $black
 
 input[type="radio"] 
   &:disabled + label
@@ -262,6 +262,8 @@ input[type="radio"]
       background-color: $input-disabled
       color: darken($input-disabled, 20%) !important
       border: 1px solid darken($input-disabled, 20%) !important
+    &:after
+      color: darken($input-disabled, 20%) !important
   & + label
     display: block
     width: auto
@@ -283,13 +285,23 @@ input[type="radio"]
       font-size: 38px
       text-align: center
       line-height: 0.5
-      border: 1px solid $grayDarkest
+      border: $input-border-width solid $grayDarkest
       border-radius: 50%
 
-input[type="radio"]:checked + label:before
-  content: "•"
-  color: $black
-  border: 1px solid $black
+input[type="radio"]:checked + label
+  &:before
+    color: $black
+    border: $input-border-width solid $black
+  &:after
+    content: "•"
+    position: absolute
+    left: 2px
+    font-size: 35px
+    line-height: 0
+    top: 11px
+    color: inherit
+
+
 
 //
 // Toggles
@@ -318,7 +330,7 @@ label.toggle
       position: relative
       height: 30px
       background-color: $bodyBackground
-      border: 2px solid $grayDarkest
+      border: $input-border-width solid $grayDarkest
       border-radius: 15px
       cursor: pointer
       +transition
