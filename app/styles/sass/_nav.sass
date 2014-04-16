@@ -6,6 +6,7 @@ $transition-duration: 600ms
   background: $bodyBackground
   transition: $transition-duration
   z-index: 420
+  padding-top: 50px
 
 html
   &.nav-active
@@ -13,8 +14,6 @@ html
       transform: translateX(-10em)
     .nav-wrap nav
       transform: scale(1,1)
-    #navicon-button
-      transform: translateX(-6em)
 
 .logo
   display: none
@@ -53,33 +52,29 @@ nav.user-nav
   bottom: 0
   width: 100%
 
-#navicon-button
-  position: fixed
-  top: 5px
-  right: 5px
-  font-size: 30px
-  transition: $transition-duration
-  z-index: 6969
+#drawer-button
+  position: relative
+  float: right
+  top: 15px
+  margin: 0 0 0 20px
+  height: 20px
   cursor: pointer
-  padding: 20px 12px
-  user-select: none
-  background: $black
-  border-radius: 50%
   .navicon:before, .navicon:after 
     transition: $transition-duration
   .navicon 
     position: relative
     width: 18px
-    height: 2px
-    background: white
+    height: 3px
+    background: $black
     transition: $transition-duration
     border-radius: 2.5rem
+    top: 10px
     &:after, &:before 
       display: block
       content: ""
-      height: 2px
+      height: 3px
       width: 18px
-      background: white
+      background: $black
       position: absolute
       z-index: -1
       transition: $transition-duration
@@ -89,15 +84,14 @@ nav.user-nav
     &:before  
       top: 5px 
 
-
-html.nav-active #navicon-button .navicon:not(.steps) .navicon:before,
-html.nav-active #navicon-button .navicon:not(.steps) .navicon:after 
+html.nav-active #drawer-button .navicon:not(.steps) .navicon:before,
+html.nav-active #drawer-button .navicon:not(.steps) .navicon:after 
   top: 0 !important
-html.nav-active #navicon-button .navicon .navicon:before,
-html.nav-active #navicon-button .navicon .navicon:after 
+html.nav-active #drawer-button .navicon .navicon:before,
+html.nav-active #drawer-button .navicon .navicon:after 
   transition: $transition-duration
 
-html.nav-active #navicon-button
+html.nav-active #drawer-button
   .navicon 
     background: transparent
     &:after  
@@ -106,8 +100,10 @@ html.nav-active #navicon-button
     &:before  
       transform: rotate(-45deg)   
       top: 0
-    &:hover
-      top: 0
+    // &:hover
+    //   top: 0
+
+
   
 
 

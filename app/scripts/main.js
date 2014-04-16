@@ -1,4 +1,4 @@
-;(function( $, window, document, undefined ) {
+;(function($, window, document, undefined){
 
 	'use strict';
 
@@ -20,11 +20,13 @@
 			self.$document         = $document;
 			self.$window           = $window;
 			self.$navToggle        = $('#navicon-button');
+			self.$mainNavToggle    = $('#drawer-button');
 			self.$modal            = $('.modal-link');
 			self.$checkbox         = $('.globalCheck');
 			self.$accordionBtn     = $('.accordion > dt > a');
 			self.$accordionContent = $('.accordion > dd');
 			self.$alert						 = $('div.alert');
+			self.$dropdown				 = $('.dropdown');
 
 			self.modalInit();
 			self.accordionAutoOpen();
@@ -33,18 +35,28 @@
 			self.alertDismissal();
 
 			self.$navToggle.on('click', self.navToggle);
+			self.$mainNavToggle.on('click', self.navToggle);
 			self.$checkbox.on('click', self.checkboxDictator);
+			self.$dropdown.on('click', self.dropdownToggle);
 			//self.$body.on('click', '.alert', self.closeFlashMessage);
 			$('body').on('click', '.accordion > dt > a', self.accordionActivate);
 		},
 
 		alertDismissal: function() {
-			$(".alert").alert();
+			$('.alert').alert();
 		},
 
 		navInit: function(){
 			globals.$html.removeClass('nav-active');
 		},// /navInit
+
+		dropdownToggle: function() {
+			if ( $(this).hasClass('active') ) {
+				$(this).removeClass('active');
+				return;
+			}
+			$(this).addClass('active');
+		},
 
 		navToggle: function() {
 			if ( globals.$html.hasClass('nav-active') ) {
@@ -64,7 +76,7 @@
 				  alignTop: true
 				});
 
-			})
+			});
 		},
 
 		// Check or un-check all the minion checkboxes in a table
@@ -79,7 +91,7 @@
 				if ( $(this).hasClass('open') ) {
 					$(this).parent().next().slideDown();
 				}
-			}) 
+			});
 		},
 
 		// Method called by click event to activate accordion actions
@@ -100,24 +112,24 @@
 	    return false;
 		},
 
-		showAjaxMessage: function(msg, type){
-			$("#flash-message").html("<div id='flash-#{type}'>#{msg}</div>");
-  		globals.flashMessage();
+		showAjaxMessage: function(){
+			$('#flash-message').html("<div id='flash-#{type}'>#{msg}</div>");
+      globals.flashMessage();
 		},
 
 		flashMessage: function() {
-			if( globals.$alert.length == 0 ) {return;}
+			if( globals.$alert.length === 0 ) {return;}
 			globals.$alert.addClass('visible');
 			setTimeout(function() {
 				globals.closeFlashMessage();
-			}, 5000)
+			}, 5000);
 		},
 
 		closeFlashMessage: function() {
 			globals.$alert.removeClass('visible');
 			setTimeout(function() {
 				globals.$alert.remove();
-			}, 6000)
+			}, 6000);
 		}
 
 	};

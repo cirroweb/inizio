@@ -1,0 +1,63 @@
+.cover
+  background-image: url(../images/cover_shadow.png)
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-color: $red
+  color: white
+  -webkit-font-smoothing: antialiased
+
+#navicon-button
+  position: fixed
+  top: 5px
+  right: 5px
+  font-size: 30px
+  transition: $transition-duration
+  z-index: 6969
+  cursor: pointer
+  padding: 20px 12px
+  user-select: none
+  background: $black
+  border-radius: 50%
+  .navicon:before, .navicon:after 
+    transition: $transition-duration
+  .navicon 
+    position: relative
+    width: 18px
+    height: 2px
+    background: white
+    transition: $transition-duration
+    border-radius: 2.5rem
+    &:after, &:before 
+      display: block
+      content: ""
+      height: 2px
+      width: 18px
+      background: white
+      position: absolute
+      z-index: -1
+      transition: $transition-duration
+      border-radius: 1rem
+    &:after  
+      top: -5px 
+    &:before  
+      top: 5px 
+
+
+html.nav-active #navicon-button .navicon:not(.steps) .navicon:before,
+html.nav-active #navicon-button .navicon:not(.steps) .navicon:after 
+  top: 0 !important
+html.nav-active #navicon-button .navicon .navicon:before,
+html.nav-active #navicon-button .navicon .navicon:after 
+  transition: $transition-duration
+
+html.nav-active #navicon-button
+  .navicon 
+    background: transparent
+    &:after  
+      transform: rotate(45deg) 
+      top: 0  
+    &:before  
+      transform: rotate(-45deg)   
+      top: 0
+    &:hover
+      top: 0

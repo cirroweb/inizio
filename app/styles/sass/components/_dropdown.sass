@@ -1,0 +1,52 @@
+.dropdown
+	position: relative
+	display: block
+	border: none
+	margin-top: 4px
+	min-width: 130px
+	line-height: 45px
+	cursor: pointer
+	@extend h6
+	.label
+		display: inline-block
+		padding: 0 35px 0 20px
+		&:after
+			content: "▾"
+			position: absolute
+			right: 16px
+			top: 10px
+			font-size: 17px
+			line-height: 23px
+	ul
+		display: none
+		top: 57px
+		left: 0
+		padding: 6px 0
+		margin: 0
+		list-style: none
+		line-height: 1.2
+		visibility: hidden
+		opacity: 0
+	&.active
+		box-shadow: 0 0 3px $grayDark
+		background: white
+		border-radius: 4px
+		.label:after
+			transform: rotate(180deg)
+		ul
+			display: block
+			visibility: visible
+			opacity: 1
+			transition: none
+			li
+				list-style: none
+				padding: 15px 35px 15px 20px
+				margin: 0
+				&:hover
+					background: $gray
+				a
+					border: none
+					color: $black
+
+
+
