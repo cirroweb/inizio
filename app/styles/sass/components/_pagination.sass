@@ -1,0 +1,79 @@
+//
+// P A G I N A T I O N
+// 
+// i won the 6th grade beauty page-ent
+// 
+
+.pagination 
+  margin: ($globalSpacing/2 ) 0
+
+  ul
+    margin-right: 10px
+    display: inline-block
+    padding-left: 0
+    margin: 0
+
+    &.prev
+      margin: 0 10px 0 0 
+      li a
+        position: relative
+        border-width: 2px
+        padding-left: 30px
+        padding-right: 20px
+        &:after
+          content: "<"
+          color: $borderColor
+          position: absolute
+          left: 15px
+          -webkit-font-smoothing: antialiased
+
+    &.next 
+      margin: 0 0 0 10px
+      li a
+        position: relative
+        border-width: 2px
+        padding-left: 20px
+        padding-right: 30px
+        &:after
+          content: ">"
+          color: $borderColor
+          position: absolute
+          right: 15px
+          -webkit-font-smoothing: antialiased
+
+    &.main li
+      &:first-child 
+        > a,
+          margin-left: 0
+          border-width: $input-border-width 1px $input-border-width $input-border-width
+           
+      &:last-child 
+        > a
+          border-width: $input-border-width $input-border-width $input-border-width 1px
+
+    > li 
+      display: inline // Remove list-style and block-level defaults
+      > a,
+        position: relative
+        float: left // Collapse white-space
+        padding: 8px 15px 6px
+        line-height: $baseLineHeight
+        text-decoration: none
+        color: $black
+        background-color: $bodyBackground
+        border-width: $input-border-width 1px $input-border-width 1px
+        border-color: $borderColor
+        border-style: solid
+        margin-left: -1px
+        &.active,
+        &:focus 
+          z-index: 2
+          color: $black
+          background-color: lighten($borderColor, 15%)
+          cursor: default
+    
+      
+    > li > a,
+      &:hover,
+      &:focus 
+        color: $black

@@ -80,13 +80,14 @@ div.select
   display: block
   &.half
     max-width: 50%
+    margin: 0 0 10px 0
   &.sm
     max-width: 150px
   &:after
     content: "▼"
     right: 13px 
-    top: 1px
-    bottom: 0
+    top: 2px
+    bottom: 2px
     padding: 15px 0 0 10px
     border-left: $input-border-width solid $input-border
     font-size: 11px
@@ -149,24 +150,28 @@ input[type="color"]
 
 // Placeholders
 input::-webkit-input-placeholder
-  color: $grayDarkest
+  color: $grayDark
   font-weight: $baseFontWeight
   opacity: 1
+  -webkit-font-smoothing: antialiased
 
 input:-moz-placehlder
-  color: $grayDarkest
+  color: $grayDark
   font-weight: $baseFontWeight
   opacity: 1
+  -webkit-font-smoothing: antialiased
 
 input::-moz-placehlder
-  color: $grayDarkest
+  color: $grayDark
   font-weight: $baseFontWeight
   opacity: 1
+  -webkit-font-smoothing: antialiased
 
 input:-ms-input-placeholder
-  color: $grayDarkest
+  color: $grayDark
   font-weight: $baseFontWeight
   opacity: 1
+  -webkit-font-smoothing: antialiased
 
 textarea
   resize: none
@@ -223,7 +228,7 @@ input[type="checkbox"]
       border: $input-border-width solid darken($input-disabled, 20%) !important
   &.inline + label
     display: inline-block
-    margin: -1px 20px 10px 0
+    margin: 0px 20px 10px 0
   & + label
     display: block
     width: auto
@@ -240,6 +245,7 @@ input[type="checkbox"]
       color: $grayDarkest
       position: absolute
       left: 0
+      top: 1px
       height: 20px
       width: 20px
       font-size: 13px
@@ -323,6 +329,7 @@ label.toggle
           position: absolute
           right: 30px
           color: white
+          line-height: 21px
           +transition
     & + div
       overflow: hidden
@@ -348,6 +355,7 @@ label.toggle
           position: absolute
           right: -30px
           color: $grayDarkest
+          line-height: 21px
   & > span
     position: relative
     right: -80px

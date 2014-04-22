@@ -32,32 +32,69 @@ h1, h2, h3, h4, h5, h6
 	margin: 0 0 10px 0
 	font-family: $headingsFontFamily
 	font-weight: $headingsFontWeight
-	line-height: 1.1
 	text-rendering: optimizelegibility
 	small
-		font-size: .65em
+		font-size: 0.65em
 		color: $grayDarkest
 
 h1
-	font-size: 48px
-	margin-bottom: 40px
+	font-size: 2em
+	line-height: 1.25
 
 h2
-	font-size: 36px
-	margin-bottom: 30px
+	font-size: 1.625em
+	line-height: 1.15384615
 
 h3
-	font-size: 24px
-	margin-bottom: 20px
+	font-size: 1.375em
+	line-height: 1.13636364
 
 h4
-	font-size: 21px
+	font-size: 1.125em
+	line-height: 1.11111111
 
 h5
-	font-size: 18px
+	font-size: 1em
+	line-height: inherit
 
 h6
-	font-size: 15px
+	font-size: 0.875em
+	line-height: inherit
+
+@media (min-width: 43.75em)
+	h1
+		font-size: 2.5em
+		line-height: 1.125
+
+	h2
+		font-size: 2em
+		line-height: 1.25
+
+	h3
+		font-size: 1.5em
+		line-height: 1.25
+
+	h4
+		line-height: 1.222222
+
+
+@media (min-width: 56.25em)
+	h1
+		font-size: 3em
+		line-height: 1.105
+
+	h2
+		font-size: 2.25em
+		line-height: 1.25
+
+	h3
+		font-size: 1.75em
+		line-height: 1.25
+
+	h4
+		font-size: 1.125em
+		line-height: 1.11111111
+
 
 ul, ol
 	padding: 0
@@ -103,7 +140,8 @@ abbr
 blockquote
 	padding: ($globalSpacing / 2) 0 ($globalSpacing / 2) $globalSpacing
 	margin: 0 0 20px
-	font-size: 1.2em
+	font-size: 1.25em
+	line-height: inherit
 	border-left: 5px solid $primaryColor
 	p
 		margin-bottom: 0

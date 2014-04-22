@@ -11,7 +11,7 @@ $transition-duration: 600ms
 html
   &.nav-active
     .main-wrap, .logo
-      transform: translateX(-10em)
+      transform: translateX(-12em)
     .nav-wrap nav
       transform: scale(1,1)
 
@@ -32,20 +32,23 @@ html
   right: 0
   background-color: $black
   height: 100%
-  width: 10em
+  width: 12em
   -webkit-font-smoothing: antialiased
   transition: $transition-duration
   nav
     transform: scale(0.7,0.7)
     transition: $transition-duration
-    a
+    & > div
+      padding: 25px 0 0 0
       text-align: center
-      display: block
-      border: none
-      margin: 30px 0
-      color: white
-      &:visited
-        color: white
+      a
+        @extend h5
+        border: none
+        color: $grayDarkest
+        &:visited
+          color: $grayDarkest
+        &.active
+          color: white
 
 nav.user-nav
   position: absolute

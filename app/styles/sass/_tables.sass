@@ -28,7 +28,7 @@ table
         border-top: 1px solid $table-border-color
   > thead > tr > th 
     vertical-align: bottom
-    border-bottom: 2px solid $table-border-color
+    border-bottom: 1px solid $table-border-color
     font-weight: $boldFontWeight
   > caption + thead,
   > colgroup + thead,
@@ -38,7 +38,7 @@ table
       > td 
         border-top: 0
   > tbody + tbody 
-    border-top: 2px solid $table-border-color
+    border-top: 1px solid $table-border-color
   
 
 // Condensed table w/ half padding
@@ -73,9 +73,15 @@ table.bordered
   > thead > tr 
     > th,
     > td 
-      border-bottom-width: 2px
+      border-bottom-width: 1px
   
-
+table.simple
+  border: 1px solid $table-border-color
+  background: $table-bg
+  > thead > th
+    border-bottom: 1px solid $table-border-color
+  > tbody > tr > td
+    border: none
 
 
 // Hover effect

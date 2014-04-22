@@ -20,107 +20,78 @@
 
     </head>
     <body>
+        <div id="navicon-button">
+          <div class="navicon"></div>
+        </div>
+
         <div class="nav-wrap">
           <nav>
-            <div><a href="/index.html">Home</a></div>
-            <div><a href="/login.html">Login</a></div>
-            <div><a href="/profile.html" class="active">Profile</a></div>
-            <div><a href="/edit.html">Edit</a></div>
+            <a href="#grid">Grid</a>
+            <a href="#type">Type</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#buttons">Buttons</a>
+            <hr>
+            <a href="/login.html">Login</a>
+            <a href="/profile.html">Profile</a>
+            <a href="/edit.html">Edit</a>
           </nav>
         </div>
 
         <div class="main-wrap">
-          <div id="top-bar" class="clearfix">
-              <div class="left-nav">
-                <div class="left">
-                  <a href="/">
-                    Inizio
-                  </a>
-                </div>
-              </div>
-              <div class="right-nav">
-                <div id="drawer-button">
-                  <div class="navicon"></div>
-                </div>
-                <div class="dropdown right">
-                  <div class="label">
-                    Frankie Bushell
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="#">Profile</a>
-                    </li>
-                    <li>
-                      <a href="#">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#">Logout</a>
-                    </li>
-                  </ul>
-                </div>
+            <div class="cover text-center">
+              <div class="monster">INIZIO</div>
+              <h6>Components</h6>
             </div>
-          </div>
 
-          <header id="info" class="space-top">
-            <div class="container">
-              <h4 class="text-center">Josh Jenkins</h4>
-              <div class="profile-image">
-                <img src="/images/edit_page/url.jpg"/>
-              </div>
-              <div class="tabs">
-                <ul class="inline text-center">
-                  <li><a href="#" class="active">View POs</a></li>
-                  <li>/</li>
-                  <li><a href="#">Edit Profile</a></li>
-                </ul>
-                <div class="tab-content">
-                  <h5 class="space-half-top"> Bio </h5>
-                    <div>Quisque sagittis convallis diam, non pretium dui blandit eget. Maecenas vehicula risus ac ligula egestas aliquet. Donec fermentum fringilla imperdiet. Quisque tempor ipsum sit amet turpis consectetur aliquam eget eu erat. Phasellus vitae vestibulum tellus. Aenean feugiat dictum consequat. Duis luctus dolor ut rutrum dignissim. Nunc consequat libero ante, a ornare leo dignissim eget.
-                    </div>
-                </div>
-              </div>
-            </div>
-          </header>
-          
-          <hr>
-          <section>
-            <div class="container">
-              <h2> Artwork </h2>
-              <div class="row">
-                <div class="col-4">
-                  <div class="art">
-                    <img src="/images/edit_page/010.jpg"/>
-                  </div>
-                  <div class="art">
-                    <img src="/images/edit_page/dolphin.jpg"/>
-                  </div>
-                  <div class="art">
-                    <img src="/images/edit_page/images.jpg"/>
-                  </div>
-                  <div class="art">
-                    <img src="/images/edit_page/Unicorn_fantasy.jpg"/>
-                  </div>
-                </div>
-              </div>
+            <section id="pagination">
+              <div class="container">
+                <div class="row">
+                  <div class="col-2">
+                    </span> 
+                      <h2>Pagination</h2>
+                    <span> 
+                    <span>
+                      <p>If content bleeds onto multiple pages use the simple pagination</p>
+                      
+                      <div class="pagination">
+                        <ul class="prev">
+                          <li><a href="#">Previous</a></li>
+                        </ul>
+                        <ul class="main">
+                          <li><a href="#" class="active">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                        </ul>
+                        <ul class="next">
+                          <li><a href="#">Next</a></li>
+                        </ul>
+                      </div>
 
-              <div class="row space-half-top">
-                <div class="col-4">
-                  <div class="art"><img src="/images/edit_page/010.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/dolphin.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/images.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/Unicorn_fantasy.jpg"/></div>
-                </div>
-              </div>
+<pre>
+&lt;div class=&quot;pagination&quot;&gt;
+  &lt;ul class=&quot;prev&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;main&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul class=&quot;next&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    
+             
 
-              <div class="row space-half-top">
-                <div class="col-4">
-                  <div class="art"><img src="/images/edit_page/010.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/dolphin.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/images.jpg"/></div>
-                  <div class="art"><img src="/images/edit_page/Unicorn_fantasy.jpg"/></div>
-                </div>           
-              </div>
-          </section>  
+
+        
         </div> <!-- /.main-wrap -->
 
 

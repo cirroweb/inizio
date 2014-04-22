@@ -51,10 +51,11 @@
                       <h2>Grid</h2>
                     <span> 
                     <span>
-                      <p class="lead">The grid system is designed to provide a fluid grid that is very simple and highly semantic.</p>
-                      <p>
-                        Wrap rows with a row div then simply use the column wrapper to specify the number of columns you want <code>col-2</code>. Every direct child within the column wrapper will be given a float, made a block, and given the appropiate percentage width.
-                      </p>
+                      <article>
+                        <p class="lead">The grid system is designed to provide a fluid grid that is very simple and highly semantic.</p>
+                        <p>
+                          Wrap rows with a row div then simply use the column wrapper to specify the number of columns you want <code>col-2</code>. Every direct child within the column wrapper will be given a float, made a block, and given the appropiate percentage width.
+                        </p>
 
 <pre>
 &lt;div class=&quot;row&quot;&gt;
@@ -72,7 +73,8 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-    
+                </article>
+
               <div class="row">
                 <div class="col-2">
                   <div class="bordered space-half text-center">
@@ -226,7 +228,22 @@
                     12
                   </div>
                 </div>
-              </div>
+              </div><br>
+
+              <article>
+                <h3>Max-Width Containers</h3>
+                <p>A % max-width is set on the container assuming that it is a block element and has a default width of 100%. These containers are also auto-centered as well.</p>
+                <div class="half bordered space margin-bottom text-center">Half</div>
+                <div class="third bordered space margin-bottom text-center">Third</div>
+                <div class="quarter bordered space margin-bottom text-center">Quarter</div>
+                <br>
+<pre>
+&lt;div class=&quot;half&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;third&quot;&gt; ... &lt;/div&gt;
+&lt;div class=&quot;quarter&quot;&gt; ... &lt;/div&gt;
+</pre>
+
+              </article>
 
             </span>
           </div>
@@ -253,6 +270,9 @@
                     <h6>Heading H6 <small>Secondary Text</small></h6>
 
                     <p class="space-half-top">Heading font and weight can be changed in the <code>_variables.sass</code> under <code>$headingsFontFamily</code> & <code>$headingsFontWeight</code>. You can add smaller secondary text by wrapping a <code>&lt;small&gt;</code> around text within the heading tag.</p>
+                    <p>
+                      The heading scale is based on Jason Pamental's <em>Scale for Web Typeography</em>. <a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography" target="_blank">Refrence Article</a>
+                    </p>
 
 <pre>
 &lt;h1&gt;Heading H1 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h1&gt;
@@ -263,6 +283,20 @@
 &lt;h6&gt;Heading H6 &lt;small&gt;Secondary Text&lt;/small&gt;&lt;/h6&gt;
 </pre>
                   </article>
+
+                  <article>
+                    <h3>Monster Text</h3>
+
+                    <p>When an <code>&lt;h1&gt;</code> wont cut it, use the <code>.monster</code> class to satisfy your needs.</p>
+                    <p>If the text is going to wrap easily, implement <a href="https://github.com/davatron5000/FitText.js" target="_blank">FitText.js</a> on the monster heading.</p>
+                    <div class="monster">Slayer</div>
+
+<pre>
+&lt;div class=&quot;moster&quot;&gt;Slayer&lt;/div&gt;
+</pre>
+
+                  </article>
+
                   <article>
                     <h3>Lead Text</h3>
 
@@ -284,8 +318,7 @@
                     <small>Source: Wikipedia.com</small>
                   </p>
 <pre>
-&lt;p&gt;
-Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt;Nicolas Cage&lt;/strong&gt;, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from &lt;em&gt;romantic comedies and dramas to science fiction and action films&lt;/em&gt;. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.&lt;br&gt;
+&lt;p&gt;Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt;Nicolas Cage&lt;/strong&gt;, is an American actor, director, and producer. He has performed in leading roles in a variety of films, ranging from &lt;em&gt;romantic comedies and dramas to science fiction and action films&lt;/em&gt;. Cage is known for his prolificacy, appearing in at least one film per year nearly every year since 1980, with the exception of 1985 and 1991.&lt;br&gt;
 
 &lt;small&gt;Source: Wikipedia.com&lt;/small&gt;
 &lt;/p&gt;
@@ -512,6 +545,47 @@ Nicolas Kim Coppola, born January 7, 1964, known professionally as &lt;strong&gt
 &lt;/table&gt;
 </pre>
                   </article>
+
+                  <article>
+                    <h5>Simple</h5>
+                     <table class="simple hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nicolas</th>
+                          <th>Nicolas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Cage</td>
+                          <td>Cage</td>
+                        </tr>
+                      </tbody>
+                    </table>
+<pre>
+&lt;table class="simple hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+                  </article>
+
                    <article>
                     <h5>Striped</h5>
                     <table class="striped">
