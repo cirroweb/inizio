@@ -38,6 +38,10 @@ label
 input[type="search"] 
   box-sizing: border-box
 
+// Remove yellow background on chrome
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 1000px white inset
+
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] 
@@ -232,9 +236,9 @@ input[type="checkbox"]
   & + label
     display: block
     width: auto
-    height: 20px
-    margin: -1px 10px 10px 0
-    padding-left: 30px
+    height: 16px
+    margin: 0px 10px 10px 0
+    padding-left: 23px
     vertical-align: middle
     cursor: pointer
     position: relative
@@ -246,11 +250,11 @@ input[type="checkbox"]
       position: absolute
       left: 0
       top: 1px
-      height: 20px
-      width: 20px
+      height: 16px
+      width: 16px
       font-size: 13px
       text-align: center
-      line-height: 1.6
+      line-height: 14px
       border: $input-border-width solid $grayDarkest
       border-radius: 4px
 
